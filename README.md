@@ -44,19 +44,6 @@ data.head()
             col_robot.append(1)
     df['human'] = col_human
     df['robot'] = col_robot
-    df.head()col_human = []
-    col_robot = []
-    df.whoAmI.unique()
-    for i in range(0, df.shape[0]):
-        if df.iloc[i]['whoAmI'] == 'human':
-            col_human.append(1)
-            col_robot.append(0)
-        else:
-            col_human.append(0)
-            col_robot.append(1)
-    df['human'] = col_human
-    df['robot'] = col_robot
-    df.head()
     ```
 |    | whoAmI   |   human |   robot |
 |---:|:---------|--------:|--------:|
